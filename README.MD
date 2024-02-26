@@ -1,4 +1,4 @@
-# Langchain Lamma2 Bot
+# Langchain Lamma2 Bot (ARIL LAB)
 This README will guide you through the setup and usage of the Langchain with Llama 2 model for pdf information retrieval using Chainlit UI.
 
 ## Prerequisites

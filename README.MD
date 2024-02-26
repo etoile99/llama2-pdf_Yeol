@@ -3,7 +3,7 @@ This README will guide you through the setup and usage of the Langchain with Lla
 
 ## Prerequisites
 
-- Python 3.9 or higher
+- Python 3.10
 - Required Python packages (you can install them using pip):
     - langchain
     - chainlit
@@ -16,15 +16,15 @@ This README will guide you through the setup and usage of the Langchain with Lla
 1. Clone this repository to your local machine.
 
     ```bash
-    git clone https://github.com/d-t-n/llama2-langchain-chainlit-pdf.git
-    cd llama2-langchain-chainlit-pdf
+    git clone https://github.com/etoile99/llama2-pdf_Yeol.git
+    cd llama2-pdf_Yeol
     ```
 
 2. Create virtual environment (conda recommended):
 
     ```bash
-    conda create -n langllmpdf python=3.10
-    conda activate langllmpdf 
+    conda create -n llama_pdf python=3.10
+    conda activate llama_pdf 
     ```
 
 3. Install the required Python packages:
@@ -33,19 +33,14 @@ This README will guide you through the setup and usage of the Langchain with Lla
     pip install -r requirements.txt
     ```
 
-4. Use your HuggingfaceHub API key (from this [URL](https://huggingface.co/settings/tokens)) in the .env file
-   ```
-   HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_token
-   ```
-
-5. Put your pdf files in the data folder and run the following command in your terminal to create the embeddings and store it locally:
+4. Put your pdf files in the data folder and run the following command in your terminal to create the embeddings and store it locally:
    ```
    python ingest.py
    ```
 
-6. Run the following command in your terminal to run the app UI (to choose ip and port use --host IP and --port XXXX):
+5. Run the following command in your terminal to run the app UI (to choose ip and port use --host IP and --port XXXX):
    ```
    chainlit run bot.py -w --host 127.0.0.1 --port 9001
    ```
 
-7. Ask any question about the pdfs
+6. Ask any question about the pdfs
